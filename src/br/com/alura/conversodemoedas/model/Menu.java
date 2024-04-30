@@ -9,10 +9,19 @@ import java.util.concurrent.TimeUnit;
 public class Menu {
 
     Conversion conversion = new Conversion();
-    List<String>  listLog= new ArrayList<>();
+    List<String> listLog = new ArrayList<>();
 
     public String getMenu() {
         return """
+                (****************************************************************);
+               ██████╗ █████╗ ███╗   ███╗██████╗ ██╗ ██████╗ );
+               ██╔════╝██╔══██╗████╗ ████║██╔══██╗██║██╔═══██╗);
+               ██║     ███████║██╔████╔██║██████╔╝██║██║   ██║);
+               ██║     ██╔══██║██║╚██╔╝██║██╔══██╗██║██║   ██║);
+               ╚██████╗██║  ██║██║ ╚═╝ ██║██████╔╝██║╚██████╔╝);
+               ╚═════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚═╝ ╚═════╝ );
+               
+               
                 1) Real brasileiro >> Dólar
                 2) Dólar >> Real brasileiro
                 3) Real brasileiro >> Peso argentino
@@ -37,7 +46,7 @@ public class Menu {
 
     }
 
-    private void registerLog(int option, String message){
+    private void registerLog(int option, String message) {
         listLog.add(STR."""
 Opção: \{option}
 \{message}Conersão feita em: \{LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"))}""");
@@ -45,9 +54,9 @@ Opção: \{option}
 
     }
 
-    public void showLog(){
+    public void showLog() {
         System.out.println("*************************LOG'S REGISTRADOS*************************");
-        for (String log : listLog ){
+        for (String log : listLog) {
             System.out.println(log);
             System.out.println("---------------------------------------");
         }
