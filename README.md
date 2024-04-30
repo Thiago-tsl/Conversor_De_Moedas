@@ -97,3 +97,7 @@ A leitura dos dados vai ocorrendo de forma sequencia! Toda vez que é efetuado u
 <p align="right">
   <a href="#topo" style="text-decoration: none; background-color: #007bff; color: white; padding: 10px 10px; border-radius: 5px;">Voltar ao Topo</a>
 </p>
+
+<p align="center">
+<img src="assets/Badge-Conversor.png">
+</p>
