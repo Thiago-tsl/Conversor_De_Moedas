@@ -70,7 +70,7 @@ String req_result = jsonobj.get("conversion_rates").getAsString();
 ```
 
 > [!NOTE]
-> Classe: [ConectionHttp](\src\br\com\alura\conversodemoedas\connection\ConectionHttp.java)
+> Classe: [ConectionHttp](src/br/com/alura/conversodemoedas/connection/ConectionHttp.java)
 >     Esta classe é responsável por realizar a captura do JSON contendo a cotação das moedas. Ela faz uma solicitação HTTP para a API do ExchangeRate
 >Essa classe irá retorna um Objeto em formato JSON, na qual futuramente virá a se torna uma Class Record para guarda os dados
 <p align="right">
@@ -83,14 +83,14 @@ String req_result = jsonobj.get("conversion_rates").getAsString();
 Interagir com o usuário foi uma parte emocionante do desafio. Implementei uma interface de texto no console, permitindo ao usuário escolher entre várias opções de conversão de moedas. A realização de testes abrangentes foi crucial para garantir o funcionamento correto do programa.
 
 > [!NOTE]
-> Classes: [Menu](src\br\com\alura\conversodemoedas\model\Menu.java)
->   Esta classe exibe um menu para o usuário e lida com a entrada do usuário. Dependendo da escolha do usuário, ele chamará a  Classes: [Conversion](src\br\com\alura\conversodemoedas\model\Conversion.java) para converter entre moedas predefinidas no menu.
+> Classes: [Menu](src/br/com/alura/conversodemoedas/model/Menu.java)
+>   Esta classe exibe um menu para o usuário e lida com a entrada do usuário. Dependendo da escolha do usuário, ele chamará a  Classes: [Conversion](src/br/com/alura/conversodemoedas/model/Conversion.java) para converter entre moedas predefinidas no menu.
 
 A leitura dos dados vai ocorrendo de forma sequencia! Toda vez que é efetuado uma escolha no console é solicitadoi o valor que deseja ser convertido.
 
-> Método:  registerLog() da Classes: [Menu](src\br\com\alura\conversodemoedas\model\Menu.java)  É invocado de forma privada toda vez que uma conversão é feita! Afim de gravar o momento daquela conversão, ficando como um log para o sistema.
+> Método:  registerLog() da Classes: [Menu](src/br/com/alura/conversodemoedas/model/Menu.java)  É invocado de forma privada toda vez que uma conversão é feita! Afim de gravar o momento daquela conversão, ficando como um log para o sistema.
 > 
-> Método:  showLog() da Classes: [Menu](src\br\com\alura\conversodemoedas\model\Menu.java) É invocada assim que o usuário decide por não fazer novas conversões. Mostrando o LOG de qual foi a opção selecionada, valor da conversão seguido por data e hora
+> Método:  showLog() da Classes: [Menu](src/br/com/alura/conversodemoedas/model/Menu.java) É invocada assim que o usuário decide por não fazer novas conversões. Mostrando o LOG de qual foi a opção selecionada, valor da conversão seguido por data e hora
 
 
 
