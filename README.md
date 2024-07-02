@@ -1,4 +1,4 @@
-<h1 align="center"> Conversor de moedas 2000 </h1>
+<h1 align="center"> Conversor de moedas </h1>
 
 <a id="topo"></a>
 
